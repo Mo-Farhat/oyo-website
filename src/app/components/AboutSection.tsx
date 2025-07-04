@@ -34,7 +34,7 @@ const AboutSection = () => (
       <h2 className="mb-4 text-2xl font-bold md:text-3xl">What Is Oyo Eats?</h2>
       <p className="mb-8 text-base text-gray-300 md:text-lg">
         OYO Eats is a local food delivery app built for Nawalapitiya. Whether
-        you're craving rice & curry, kottu, or international fast food, OYO Eats
+        you&apos;re craving rice & curry, kottu, or international fast food, OYO Eats
         connects you with nearby restaurants—all from the convenience of your
         phone.
       </p>

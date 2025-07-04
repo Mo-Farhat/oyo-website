@@ -1,7 +1,6 @@
 "use client";
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const HeroSection = () => {
   const sectionRef = useRef<HTMLElement>(null);

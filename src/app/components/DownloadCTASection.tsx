@@ -17,7 +17,7 @@ const DownloadCTASection = () => (
       Ready to Experience Better Food Delivery?
       </h2>
       <p className="text-lg text-gray-300 mb-8">
-      Join thousands of satisfied customers in Nawalapitiya who trust Oyo Eats for their daily meals. Download the app today and discover why we're the fastest-growing food delivery service in the region.
+      Join thousands of satisfied customers in Nawalapitiya who trust Oyo Eats for their daily meals. Download the app today and discover why we&apos;re the fastest-growing food delivery service in the region.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <a

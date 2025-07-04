@@ -23,7 +23,7 @@ const AreaCoverageSection = () => (
           Nawalapitiya, Sri Lanka.
         </p>
         <p className="text-gray-300 mb-2">
-          Looking for food delivery in around the area? We've
+          Looking for food delivery in around the area? We&apos;ve
           got you covered—check the app to see which restaurants are nearby.
         </p>
         <p className="text-[#00D707] font-medium mt-2">
