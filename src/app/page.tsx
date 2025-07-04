@@ -8,6 +8,7 @@ import ForRestaurantsSection from "./components/ForRestaurantsSection";
 import DownloadCTASection from "./components/DownloadCTASection";
 import FAQSection from "./components/FAQSection";
 import { ScrollProgress } from "~/components/magicui/scroll-progress";
+import AnimatedPartners from "./components/AnimatedPartners";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
 
       <Header />
       <HeroSection />
+      <AnimatedPartners />
       <AboutSection />
       <WhyUseSection />
       <HowItWorksSection />

@@ -14,11 +14,10 @@ const DownloadCTASection = () => (
       className="max-w-2xl mx-auto text-center"
     >
       <h2 className="text-2xl md:text-3xl font-bold mb-2">
-        Ready to Eat Smarter?
+      Ready to Experience Better Food Delivery?
       </h2>
       <p className="text-lg text-gray-300 mb-8">
-        Download the OYO Eats app today and explore the best of Nawalapitiya's
-        food scene.
+      Join thousands of satisfied customers in Nawalapitiya who trust Oyo Eats for their daily meals. Download the app today and discover why we're the fastest-growing food delivery service in the region.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <a

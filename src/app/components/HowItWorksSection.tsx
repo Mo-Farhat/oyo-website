@@ -2,23 +2,23 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Download, Menu, Truck } from "lucide-react";
+import  Carousel  from "../../components/ui/carousel";
 
-const steps = [
+const slides = [
   {
-    icon: <Download className="w-8 h-8 text-green-500" />,
-    title: "Download the App",
-    desc: "Available on Android and iOS.",
+    title: "📲 Download the App",
+description: "Available on Android and iOS.",
+    src: "/phone-screen.png",
   },
   {
-    icon: <Menu className="w-8 h-8 text-green-500" />,
-    title: "Browse Local Menus",
-    desc: "Explore food options from restaurants in your area.",
+    title: "🍛 Browse Local Menus",
+   description: "Explore food options from restaurants in your area.",
+    src: "/hand-smartphone.jpeg",
   },
   {
-    icon: <Truck className="w-8 h-8 text-green-500" />,
-    title: "Get It Delivered",
-    desc: "Enjoy fresh meals delivered straight to your location.",
+    title: "🚚 Get It Delivered",
+    description: "Enjoy fresh meals delivered straight to your location.",
+    src: "/package-delivery.jpeg",
   },
 ];
 
@@ -32,20 +32,8 @@ const HowItWorksSection = () => (
       className="max-w-3xl mx-auto text-center"
     >
       <h2 className="text-2xl md:text-3xl font-bold mb-8">How It Works</h2>
-      <div className="flex flex-col md:flex-row gap-8 justify-center items-start">
-        {steps.map((step, i) => (
-          <div
-            key={i}
-            className="flex flex-col items-center bg-[#111113] rounded-xl p-6 shadow w-full md:w-1/3"
-          >
-            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-green-900 mb-4 text-lg font-bold">
-              {i + 1}
-            </div>
-            {step.icon}
-            <h3 className="mt-4 mb-2 text-lg font-semibold">{step.title}</h3>
-            <p className="text-gray-400 text-sm">{step.desc}</p>
-          </div>
-        ))}
+      <div className="flex justify-center items-center">
+        <Carousel slides={slides} />
       </div>
     </motion.div>
   </section>
