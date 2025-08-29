@@ -137,19 +137,20 @@ const HeroSection = () => {
               willChange: isInView ? "transform" : "auto",
             }}
           >
-            <h1 className="mb-4 text-4xl leading-tight font-bold md:text-6xl">
-              Bringing the best food around you, instantly.
+            <h1 className="mb-6 text-4xl leading-tight font-bold md:text-6xl lg:text-6xl">
+              Bringing the best food around you,{" "}
+              <span className="text-[#00D707]">instantly.</span>
             </h1>
-            <p className="mb-8 text-lg text-gray-300 md:text-xl">
+            <p className="mb-8 text-lg leading-relaxed text-gray-300 md:text-xl lg:text-2xl">
               Your go-to app for quick, affordable, and delicious meals from
-              local restaurants.
+              local restaurants in Nawalapitiya.
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row md:justify-start">
               <motion.a
                 href="#"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#00D707] px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-[#00B300]"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#00D707] px-8 py-4 text-base font-semibold text-black shadow-lg transition-all duration-300 hover:bg-[#00B300] hover:shadow-xl"
               >
                 Download On Android
               </motion.a>
@@ -157,10 +158,18 @@ const HeroSection = () => {
                 href="#"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center rounded-md border border-gray-700 bg-[#18191B] px-6 py-3 text-base font-medium text-white shadow-sm transition-colors hover:bg-[#2E3135]"
+                className="inline-flex items-center justify-center rounded-md border border-gray-700 bg-[#18191B] px-8 py-4 text-base font-semibold text-white shadow-lg transition-all duration-300 hover:border-[#00D707] hover:bg-[#2E3135]"
               >
                 Download On iOS
               </motion.a>
+            </div>
+
+            {/* Trust Indicators */}
+            <div className="mt-8 flex flex-col items-center gap-4 text-xs text-gray-500 sm:flex-row">
+              <div className="flex items-center gap-2">
+                <span className="text-[#00D707]">✓</span>
+                <span>24/7 customer support</span>
+              </div>
             </div>
           </motion.div>
 

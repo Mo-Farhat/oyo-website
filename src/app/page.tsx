@@ -7,8 +7,11 @@ import AreaCoverageSection from "./components/AreaCoverageSection";
 import ForRestaurantsSection from "./components/ForRestaurantsSection";
 import DownloadCTASection from "./components/DownloadCTASection";
 import FAQSection from "./components/FAQSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 import { ScrollProgress } from "~/components/magicui/scroll-progress";
 import AnimatedPartners from "./components/AnimatedPartners";
+import CustomerReviewsSection from "./components/CustomerReviewsSection";
 
 export default function Home() {
   return (
@@ -23,8 +26,11 @@ export default function Home() {
       <HowItWorksSection />
       <AreaCoverageSection />
       <ForRestaurantsSection />
-      <DownloadCTASection />
+      <CustomerReviewsSection />
       <FAQSection />
+
+      <ContactSection />
+      <Footer />
     </>
   );
 }

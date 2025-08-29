@@ -27,17 +27,6 @@ const Header = () => {
         </a>
         {/* Desktop Navigation - Clean and interactive with subtle hover effects */}
         <div className="hidden items-center gap-2 md:flex lg:gap-4">
-          {navLinks.map((link) => (
-            <motion.a
-              key={link.name}
-              href={link.href}
-              className="rounded-lg px-3 py-2 text-base font-medium text-white transition-colors duration-200 hover:bg-white/10 hover:text-[#F97316]"
-              whileHover={{ scale: 1.05, color: "#F97316" }} // Subtle scale and color change on hover
-              whileTap={{ scale: 0.95 }}
-            >
-              {link.name}
-            </motion.a>
-          ))}
           {/* Download Button - Prominent and interactive */}
           <motion.a
             href="#download"
@@ -54,7 +43,8 @@ const Header = () => {
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           onClick={() => setMenuOpen((open) => !open)}
         >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />} {/* Icon changes based on menu state */}
+          {menuOpen ? <X size={28} /> : <Menu size={28} />}{" "}
+          {/* Icon changes based on menu state */}
         </button>
       </nav>
       {/* Mobile Drawer - Animated and minimalist */}
@@ -65,7 +55,7 @@ const Header = () => {
             animate={{ x: 0 }} // Slides in from the right
             exit={{ x: "100%" }} // Slides out to the right
             transition={{ type: "spring", stiffness: 300, damping: 30 }} // Smooth spring animation
-            className="fixed inset-y-0 right-0 z-40 flex w-64 flex-col gap-4 rounded-l-xl bg-[#111113] p-6 shadow-xl border-l border-gray-700 md:hidden" // Dark background, subtle border
+            className="fixed inset-y-0 right-0 z-40 flex w-64 flex-col gap-4 rounded-l-xl border-l border-gray-700 bg-[#111113] p-6 shadow-xl md:hidden" // Dark background, subtle border
             style={{
               fontFamily: 'var(--font-poppins), "Nunito Sans", sans-serif',
             }}

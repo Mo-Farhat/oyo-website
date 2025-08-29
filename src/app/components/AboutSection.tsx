@@ -23,7 +23,10 @@ const features = [
 ];
 
 const AboutSection = () => (
-  <section className="mx-auto w-full bg-[#18191B] px-5 py-12 text-white">
+  <section
+    id="about"
+    className="mx-auto w-full bg-[#18191B] px-5 py-20 text-white"
+  >
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -34,9 +37,9 @@ const AboutSection = () => (
       <h2 className="mb-4 text-2xl font-bold md:text-3xl">What Is Oyo Eats?</h2>
       <p className="mb-8 text-base text-gray-300 md:text-lg">
         OYO Eats is a local food delivery app built for Nawalapitiya. Whether
-        you&apos;re craving rice & curry, kottu, or international fast food, OYO Eats
-        connects you with nearby restaurants—all from the convenience of your
-        phone.
+        you&apos;re craving rice & curry, kottu, or international fast food, OYO
+        Eats connects you with nearby restaurants—all from the convenience of
+        your phone.
       </p>
       <div className="flex flex-col justify-center gap-6 md:flex-row">
         {features.map((f, i) => (
