@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-30 w-full bg-[#111113] shadow-md">
-      <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-8">
+      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-8">
         {/* Logo - Minimalist and bold, using Poppins font for a premium feel */}
         <a
           href="#home"
@@ -30,7 +30,7 @@ const Header = () => {
           {/* Download Button - Prominent and interactive */}
           <motion.a
             href="#download"
-            className="ml-2 inline-flex items-center rounded-full bg-[#0EF406] px-5 py-2 text-base font-semibold text-white shadow-md transition-colors duration-200 hover:bg-[#00B300] focus:ring-2 focus:ring-[#F97316]/50 focus:outline-none"
+            className="ml-2 inline-flex items-center rounded-lg bg-[#0EF406] px-5 py-2 text-base font-bold text-black shadow-md transition-colors duration-200 hover:bg-[#00B300] focus:ring-2 focus:ring-[#F97316]/50 focus:outline-none"
             whileHover={{ scale: 1.05 }} // Subtle scale on hover
             whileTap={{ scale: 0.95 }}
           >

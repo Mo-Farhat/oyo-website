@@ -69,40 +69,40 @@ const ContactSection = () => {
             className="space-y-8"
           >
             <div className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8">
-              <h2 className="mb-6 text-2xl font-semibold text-[#00D707]">
+              <h2 className="mb-6 text-2xl font-semibold text-white">
                 Get in Touch
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 rounded-lg bg-[#00D707]/10 p-2">
+                  <div className="mt-1 rounded-lg bg-white/10 p-2">
                     <Mail className="h-6 w-6 text-[#00D707]" />
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-white">Email</h3>
-                    <p className="text-gray-300">support@oyoeats.com</p>
-                    <p className="text-gray-300">partner@oyoeats.com</p>
+                    <p className="text-gray-300">support@oyoeats.lk</p>
+                    <p className="text-gray-300">partner@oyoeats.lk</p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 rounded-lg bg-[#00D707]/10 p-2">
+                  <div className="mt-1 rounded-lg bg-white/10 p-2">
                     <Phone className="h-6 w-6 text-[#00D707]" />
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-white">Phone</h3>
-                    <p className="text-gray-300">+94 11 234 5678</p>
-                    <p className="text-gray-300">+94 77 123 4567</p>
+
+                    <p className="text-gray-300">+94 72 878 7872 </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 rounded-lg bg-[#00D707]/10 p-2">
+                  <div className="mt-1 rounded-lg bg-white/10 p-2">
                     <MapPin className="h-6 w-6 text-[#00D707]" />
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-white">Address</h3>
                     <p className="text-gray-300">
-                      OYO Eats
+                      Oyo Eats
                       <br />
                       Nawalapitiya, Sri Lanka
                       <br />
@@ -112,7 +112,7 @@ const ContactSection = () => {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="mt-1 rounded-lg bg-[#00D707]/10 p-2">
+                  <div className="mt-1 rounded-lg bg-white/10 p-2">
                     <Clock className="h-6 w-6 text-[#00D707]" />
                   </div>
                   <div>
@@ -121,30 +121,9 @@ const ContactSection = () => {
                     </h3>
                     <p className="text-gray-300">24/7 Customer Support</p>
                     <p className="text-gray-300">
-                      Business Hours: 8:00 AM - 8:00 PM
+                      Business Hours: 10:00 AM - 11:00 PM
                     </p>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Quick Support */}
-            <div className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8">
-              <h3 className="mb-4 text-xl font-semibold text-[#00D707]">
-                Quick Support
-              </h3>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3 rounded-lg bg-[#2A2A2A] p-3 transition-colors hover:bg-[#00D707]/10">
-                  <MessageSquare className="h-5 w-5 text-[#00D707]" />
-                  <span className="text-gray-300">Live Chat (24/7)</span>
-                </div>
-                <div className="flex items-center gap-3 rounded-lg bg-[#2A2A2A] p-3 transition-colors hover:bg-[#00D707]/10">
-                  <Mail className="h-5 w-5 text-[#00D707]" />
-                  <span className="text-gray-300">Email Support</span>
-                </div>
-                <div className="flex items-center gap-3 rounded-lg bg-[#2A2A2A] p-3 transition-colors hover:bg-[#00D707]/10">
-                  <Phone className="h-5 w-5 text-[#00D707]" />
-                  <span className="text-gray-300">Phone Support</span>
                 </div>
               </div>
             </div>
@@ -158,7 +137,7 @@ const ContactSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
           >
-            <h2 className="mb-6 text-2xl font-semibold text-[#00D707]">
+            <h2 className="mb-6 text-2xl font-semibold text-white">
               Send us a Message
             </h2>
 

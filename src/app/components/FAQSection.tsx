@@ -6,24 +6,24 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "Is OYO Eats available in my area?",
+    question: "Is Oyo Eats available in my area?",
     answer:
-      "OYO Eats currently covers a 20km radius around Nawalapitiya. Check the app or contact us to confirm if your location is within our delivery zone.",
+      "Oyo Eats currently covers a 30km radius around Nawalapitiya. You can check the app or contact us to confirm if your location is within our delivery zone.",
   },
   {
     question: "How do I track my order?",
     answer:
-      "Once you place an order, you'll receive real-time updates via push notifications. You can also track your order in real-time through the app's order tracking feature.",
+      "Once you place an order, you'll receive real-time updates via push notifications. ",
   },
   {
-    question: "What restaurants are listed on OYO Eats?",
+    question: "What restaurants are listed on Oyo Eats?",
     answer:
-      "We partner with 50+ local restaurants in Nawalapitiya, including traditional Sri Lankan cuisine, fast food, and international options. New restaurants are added regularly.",
+      "We partner with 15+ local restaurants in Nawalapitiya, including traditional Sri Lankan cuisine and fast food. New restaurants are added regularly.",
   },
   {
     question: "What are the delivery fees?",
     answer:
-      "Delivery fees vary based on distance and range from Rs. 50-150. Orders above Rs. 1000 often qualify for free delivery. Check the app for current pricing.",
+      "Delivery fees vary based on distance starting at LKR 150. Check the app for current pricing.",
   },
   {
     question: "How long does delivery take?",
@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "Can I pay with cash?",
     answer:
-      "Yes! We accept both cash on delivery and digital payments including credit cards, debit cards, and mobile wallets for your convenience.",
+      "Yes! We accept both cash on delivery and digital payments including credit cards, debit cards, and LankaQR for your convenience.",
   },
   {
     question: "What if I'm not satisfied with my order?",
@@ -48,12 +48,12 @@ const faqs = [
   {
     question: "Can I schedule orders in advance?",
     answer:
-      "Currently, we offer same-day delivery. We're working on adding advance ordering features for special occasions and events.",
+      "Yes, you can schedule orders in advance for special occasions and events.",
   },
   {
     question: "How do I become a restaurant partner?",
     answer:
-      "Interested restaurants can contact us at partner@oyoeats.com or fill out our partnership form. We'll guide you through the onboarding process.",
+      "Interested restaurants can contact us at partner@oyoeats.lk or fill out our partnership form on our website. We'll guide you through the onboarding process.",
   },
 ];
 
@@ -85,7 +85,7 @@ const FAQSection = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-300">
-            Find answers to common questions about OYO Eats
+            Find answers to common questions about Oyo Eats
           </p>
         </motion.div>
 
@@ -119,7 +119,7 @@ const FAQSection = () => {
               className="overflow-hidden rounded-lg border border-gray-700 bg-[#1E1E1E] transition-colors hover:border-[#00D707]"
             >
               <button
-                className="flex w-full items-center justify-between px-6 py-4 text-left font-medium transition-colors hover:bg-[#2A2A2A] focus:outline-none"
+                className="flex w-full cursor-pointer items-center justify-between px-6 py-4 text-left font-medium transition-colors hover:bg-[#2A2A2A] focus:outline-none"
                 onClick={() => toggleFAQ(index)}
               >
                 <span className="pr-4 text-base font-medium text-white">
@@ -143,7 +143,7 @@ const FAQSection = () => {
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                     className="overflow-hidden"
                   >
-                    <div className="border-t border-gray-700 px-6 pb-4 text-gray-300">
+                    <div className="border-t border-gray-700 px-6 py-2 pb-4 text-gray-300">
                       {faq.answer}
                     </div>
                   </motion.div>
@@ -169,7 +169,7 @@ const FAQSection = () => {
             help!
           </p>
           <a
-            href="mailto:support@oyoeats.com"
+            href="mailto:support@oyoeats.lk"
             className="inline-flex items-center gap-2 rounded-lg bg-[#00D707] px-6 py-3 font-semibold text-black transition-colors hover:bg-[#00B300]"
           >
             Contact Support

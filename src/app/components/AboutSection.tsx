@@ -2,58 +2,85 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Truck, Utensils, Smartphone } from "lucide-react";
+import { MapPin, Clock, Users } from "lucide-react";
 
-const features = [
+const stats = [
   {
-    icon: <Truck className="h-8 w-8 text-green-500" />,
-    title: "Fast and reliable deliveries",
-    desc: "Get your food delivered quickly and reliably from local restaurants.",
+    value: "Nawalapitiya",
+    label: "Coverage Area",
   },
   {
-    icon: <Utensils className="h-8 w-8 text-green-500" />,
-    title: "Curated local food choices",
-    desc: "Explore a variety of dishes from your favorite spots in Nawalapitiya.",
+    value: "25 mins",
+    label: "Avg. Delivery",
   },
   {
-    icon: <Smartphone className="h-8 w-8 text-green-500" />,
-    title: "Simple, user-friendly mobile experience",
-    desc: "Order with ease using our intuitive mobile app.",
+    value: "1000+",
+    label: "Happy Customers",
   },
 ];
 
 const AboutSection = () => (
-  <section
-    id="about"
-    className="mx-auto w-full bg-[#18191B] px-5 py-20 text-white"
-  >
-    <motion.div
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.7 }}
-      className="mx-auto max-w-2xl text-center"
-    >
-      <h2 className="mb-4 text-2xl font-bold md:text-3xl">What Is Oyo Eats?</h2>
-      <p className="mb-8 text-base text-gray-300 md:text-lg">
-        OYO Eats is a local food delivery app built for Nawalapitiya. Whether
-        you&apos;re craving rice & curry, kottu, or international fast food, OYO
-        Eats connects you with nearby restaurants—all from the convenience of
-        your phone.
-      </p>
-      <div className="flex flex-col justify-center gap-6 md:flex-row">
-        {features.map((f, i) => (
-          <div
-            key={i}
-            className="flex w-full flex-col items-center rounded-xl bg-[#1E1E1E] p-6 shadow md:w-1/3"
-          >
-            {f.icon}
-            <h3 className="mt-4 mb-2 text-lg font-semibold">{f.title}</h3>
-            <p className="text-sm text-gray-400">{f.desc}</p>
-          </div>
-        ))}
-      </div>
-    </motion.div>
+  <section id="about" className="bg-[#18191B] py-20 text-white">
+    <div className="container mx-auto max-w-6xl px-4">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 }}
+        className="text-center"
+      >
+        <h2 className="mb-6 text-4xl font-bold md:text-5xl lg:text-6xl">
+          About Oyo Eats
+        </h2>
+        <p className="mx-auto mb-16 max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl">
+          Oyo Eats is your local food delivery platform, connecting you with the
+          best restaurants in Nawalapitiya. We bring fresh, delicious meals
+          right to your doorstep with speed, reliability, and exceptional
+          service.
+        </p>
+      </motion.div>
+
+      {/* Stats Grid */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.2 }}
+        className="grid grid-cols-1 gap-8 md:grid-cols-3"
+      >
+        {stats.map((stat, index) => {
+          return (
+            <div
+              key={index}
+              className="rounded-2xl border border-gray-800 bg-[#18191B] p-8 text-center transition-all duration-300 hover:border-[#00D707]/30"
+            >
+              <div className="mb-2 text-3xl font-bold text-white">
+                {stat.value}
+              </div>
+              <div className="text-gray-400">{stat.label}</div>
+            </div>
+          );
+        })}
+      </motion.div>
+
+      {/* Mission Statement */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7, delay: 0.4 }}
+        className="mt-20 text-center"
+      >
+        <div className="mx-auto max-w-4xl rounded-3xl border border-gray-800 bg-gradient-to-r from-[#18191B] to-[#0a0a0a] p-12">
+          <h3 className="mb-6 text-2xl font-bold md:text-3xl">Our Mission</h3>
+          <p className="text-lg leading-relaxed text-gray-300 md:text-xl">
+            To make great food accessible to everyone in Nawalapitiya by
+            connecting local restaurants with hungry customers through our fast,
+            reliable, and user-friendly delivery platform.
+          </p>
+        </div>
+      </motion.div>
+    </div>
   </section>
 );
 

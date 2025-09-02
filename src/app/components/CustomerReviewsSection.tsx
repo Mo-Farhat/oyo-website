@@ -12,8 +12,6 @@ const reviews = [
     rating: 5,
     comment:
       "Amazing service! Food arrived hot and fresh in just 20 minutes. The app is so easy to use, and the delivery guy was very polite. Highly recommend!",
-    avatar: "👨‍💼",
-    orderType: "Rice & Curry",
   },
   {
     id: 2,
@@ -22,8 +20,6 @@ const reviews = [
     rating: 5,
     comment:
       "Best food delivery app in Nawalapitiya! I love how I can track my order in real-time. The food quality is always excellent and delivery is super fast.",
-    avatar: "👩‍💻",
-    orderType: "Kottu Roti",
   },
   {
     id: 3,
@@ -32,8 +28,6 @@ const reviews = [
     rating: 4,
     comment:
       "Great app for food delivery! Even though I'm in a village, they deliver here. Food arrives fresh and the delivery fees are reasonable. Very satisfied customer!",
-    avatar: "👨‍🌾",
-    orderType: "Fast Food",
   },
   {
     id: 4,
@@ -41,9 +35,7 @@ const reviews = [
     location: "Central Nawalapitiya",
     rating: 5,
     comment:
-      "OYO Eats has become my go-to for lunch at work. Quick delivery, fresh food, and excellent customer service. The app interface is user-friendly too!",
-    avatar: "👩‍🏫",
-    orderType: "Traditional Sri Lankan",
+      "Oyo Eats has become my go-to for lunch at work. Quick delivery, fresh food, and excellent customer service. The app interface is user-friendly too!",
   },
   {
     id: 5,
@@ -52,8 +44,6 @@ const reviews = [
     rating: 5,
     comment:
       "Fantastic service! I ordered late at night and still got my food delivered quickly. The delivery person was very professional. Will definitely use again!",
-    avatar: "👨‍🔧",
-    orderType: "Late Night Snacks",
   },
 ];
 
@@ -94,7 +84,7 @@ const CustomerReviewsSection = () => {
             What Our Customers Say
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-300">
-            Join thousands of satisfied customers who trust OYO Eats for their
+            Join thousands of satisfied customers who trust Oyo Eats for their
             daily meals
           </p>
         </motion.div>
@@ -115,7 +105,9 @@ const CustomerReviewsSection = () => {
             <div className="h-16 border-l border-gray-600"></div>
             <div className="text-center">
               <div className="mb-2 flex gap-1">{renderStars(5)}</div>
-              <div className="text-sm text-gray-400">Based on 500+ reviews</div>
+              <div className="text-sm text-gray-400">
+                Based on 3000+ reviews
+              </div>
             </div>
             <div className="h-16 border-l border-gray-600"></div>
             <div className="text-center">
@@ -143,18 +135,12 @@ const CustomerReviewsSection = () => {
 
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4">
-                <div className="text-4xl">
-                  {reviews[currentReview]?.avatar ?? ""}
-                </div>
                 <div>
                   <div className="font-semibold text-white">
                     {reviews[currentReview]?.name ?? ""}
                   </div>
                   <div className="text-sm text-gray-400">
                     {reviews[currentReview]?.location ?? ""}
-                  </div>
-                  <div className="text-xs text-[#00D707]">
-                    Ordered: {reviews[currentReview]?.orderType ?? ""}
                   </div>
                 </div>
               </div>
@@ -166,12 +152,12 @@ const CustomerReviewsSection = () => {
           </div>
 
           {/* Navigation Buttons */}
-          <div className="mt-6 flex justify-center gap-4">
+          <div className="mt-6 flex cursor-pointer justify-center gap-4">
             <button
               onClick={prevReview}
-              className="rounded-full border border-gray-700 bg-[#1E1E1E] p-3 transition-colors hover:border-[#00D707]"
+              className="group cursor-pointer rounded-full border border-gray-700 bg-[#1E1E1E] p-3 transition-colors hover:border-[#00D707]"
             >
-              <ChevronLeft className="h-5 w-5 text-white" />
+              <ChevronLeft className="h-5 w-5 cursor-pointer text-white" />
             </button>
             <div className="flex gap-2">
               {reviews.map((_, index) => (
@@ -188,9 +174,9 @@ const CustomerReviewsSection = () => {
             </div>
             <button
               onClick={nextReview}
-              className="rounded-full border border-gray-700 bg-[#1E1E1E] p-3 transition-colors hover:border-[#00D707]"
+              className="group cursor-pointer rounded-full border border-gray-700 bg-[#1E1E1E] p-3 transition-colors hover:border-[#00D707]"
             >
-              <ChevronRight className="h-5 w-5 text-white" />
+              <ChevronRight className="h-5 w-5 cursor-pointer text-white" />
             </button>
           </div>
         </motion.div>
@@ -204,15 +190,15 @@ const CustomerReviewsSection = () => {
           className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-3"
         >
           <div className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-6 text-center">
-            <div className="mb-2 text-3xl font-bold text-[#00D707]">500+</div>
+            <div className="mb-2 text-3xl font-bold text-[white]">3000+</div>
             <div className="text-gray-300">Happy Customers</div>
           </div>
           <div className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-6 text-center">
-            <div className="mb-2 text-3xl font-bold text-[#00D707]">1000+</div>
+            <div className="mb-2 text-3xl font-bold text-[white]">1000+</div>
             <div className="text-gray-300">Orders Delivered</div>
           </div>
           <div className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-6 text-center">
-            <div className="mb-2 text-3xl font-bold text-[#00D707]">25min</div>
+            <div className="mb-2 text-3xl font-bold text-[white]">25min</div>
             <div className="text-gray-300">Average Delivery</div>
           </div>
         </motion.div>

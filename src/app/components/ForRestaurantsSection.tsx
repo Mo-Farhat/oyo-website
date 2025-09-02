@@ -157,13 +157,13 @@ const ForRestaurantsSection = () => {
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex items-center gap-2 rounded-lg bg-[#00D707] px-6 py-3 font-semibold text-black shadow transition-colors hover:bg-[#00B300]"
+                className="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[#00D707] px-6 py-3 font-semibold text-black shadow transition-colors hover:bg-[#00B300]"
               >
                 <FileText className="h-5 w-5" />
                 Fill Partnership Form
               </button>
               <a
-                href="mailto:partner@oyoeats.com"
+                href="mailto:partner@oyoeats.lk"
                 className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-green-700 shadow transition-colors hover:bg-gray-100"
               >
                 <Mail className="h-5 w-5" />

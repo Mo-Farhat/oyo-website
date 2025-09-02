@@ -28,8 +28,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-2xl font-bold">
-              <span className="text-white">OYO</span>
-              <span className="text-[#00D707]">Eats</span>
+              <img src="/logo.png" alt="Oyo Eats" className="h-10 w-10" />
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
               The leading food delivery service in Nawalapitiya, connecting you
@@ -60,9 +59,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-[#00D707]">
-              Quick Links
-            </h3>
+            <h3 className="text-lg font-semibold text-white">Quick Links</h3>
             <div className="space-y-2">
               <button
                 onClick={() => scrollToSection("#about")}
@@ -99,15 +96,15 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-[#00D707]">Contact Us</h3>
+            <h3 className="text-lg font-semibold text-white">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400">
                 <Mail className="h-4 w-4 text-[#00D707]" />
-                <span className="text-sm">support@oyoeats.com</span>
+                <span className="text-sm">support@oyoeats.lk</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <Phone className="h-4 w-4 text-[#00D707]" />
-                <span className="text-sm">+94 11 234 5678</span>
+                <span className="text-sm">+94 72 878 7872 </span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <MapPin className="h-4 w-4 text-[#00D707]" />
@@ -122,11 +119,9 @@ const Footer = () => {
 
           {/* Download App */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-[#00D707]">
-              Download App
-            </h3>
+            <h3 className="text-lg font-semibold text-white">Download App</h3>
             <p className="text-sm text-gray-400">
-              Get the OYO Eats app for the best food delivery experience
+              Get the Oyo Eats app for the best food delivery experience
             </p>
             <div className="space-y-3">
               <button
@@ -154,24 +149,24 @@ const Footer = () => {
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="text-center md:text-left">
             <p className="text-sm text-gray-500">
-              © 2024 OYO Eats. All rights reserved. | Serving Nawalapitiya and
+              © 2024 Oyo Eats. All rights reserved. | Serving Nawalapitiya and
               surrounding areas
             </p>
           </div>
 
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
-            <button
-              onClick={() => scrollToSection("#privacy-policy")}
+            <a
+              href="/privacy-policy"
               className="cursor-pointer transition-colors hover:text-[#00D707]"
             >
               Privacy Policy
-            </button>
-            <button
-              onClick={() => scrollToSection("#terms-of-service")}
+            </a>
+            <a
+              href="/terms-of-service"
               className="cursor-pointer transition-colors hover:text-[#00D707]"
             >
               Terms of Service
-            </button>
+            </a>
             <button
               onClick={() => scrollToSection("#contact")}
               className="cursor-pointer transition-colors hover:text-[#00D707]"
@@ -184,7 +179,7 @@ const Footer = () => {
         {/* Additional Info */}
         <div className="mt-8 border-t border-gray-700 pt-6 text-center">
           <p className="text-xs text-gray-600">
-            OYO Eats is a registered trademark. Food delivery available within
+            Oyo Eats is a registered trademark. Food delivery available within
             20km radius of Nawalapitiya. Delivery times may vary based on
             location and restaurant preparation time.
           </p>
