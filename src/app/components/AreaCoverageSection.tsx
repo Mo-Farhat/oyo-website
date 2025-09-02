@@ -53,7 +53,7 @@ const AreaCoverageSection = () => (
         {coverageAreas.map((area, index) => (
           <div
             key={index}
-            className="rounded-2xl border border-gray-800 bg-[#18191B] p-8 text-center transition-all duration-300 hover:border-[#00D707]/30"
+            className="rounded-2xl border border-[#00D707] bg-[#18191B] p-8 text-center transition-all duration-300 hover:border-[#00D707]/30"
           >
             <div className="mb-4 flex justify-center"></div>
             <h3 className="mb-2 text-xl font-bold text-white">{area.area}</h3>
@@ -79,7 +79,7 @@ const AreaCoverageSection = () => (
         transition={{ duration: 0.7, delay: 0.4 }}
         className="text-center"
       >
-        <div className="mx-auto max-w-4xl rounded-3xl border border-gray-800 bg-gradient-to-r from-[#18191B] to-[#0a0a0a] p-12">
+        <div className="mx-auto max-w-4xl rounded-3xl border border-[#00D707] bg-gradient-to-r from-[#18191B] to-[#0a0a0a] p-12">
           <h3 className="mb-6 text-2xl font-bold md:text-3xl">
             Delivery Coverage
           </h3>

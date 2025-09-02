@@ -68,14 +68,16 @@ const steps = [
 const HowItWorksSection = () => {
   const [activeStep, setActiveStep] = useState(0);
   const [isInView, setIsInView] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setIsInView(entry?.isIntersecting ?? false);
       },
-      { threshold: 0.3 },
+      { threshold: 0.2 },
     );
 
     if (sectionRef.current) {
@@ -90,14 +92,32 @@ const HowItWorksSection = () => {
   }, []);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || isPaused) {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+      return;
+    }
 
-    const interval = setInterval(() => {
+    intervalRef.current = setInterval(() => {
       setActiveStep((prev) => (prev + 1) % steps.length);
-    }, 3000);
+    }, 4000);
 
-    return () => clearInterval(interval);
-  }, [isInView]);
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+  }, [isInView, isPaused]);
+
+  const handleStepClick = (index: number) => {
+    setActiveStep(index);
+    setIsPaused(true);
+    // Resume auto-slide after 8 seconds of manual interaction
+    setTimeout(() => setIsPaused(false), 8000);
+  };
 
   return (
     <section
@@ -122,8 +142,26 @@ const HowItWorksSection = () => {
           </p>
         </motion.div>
 
+        {/* Progress Indicators */}
+        <div className="mb-8 flex justify-center">
+          <div className="flex gap-2">
+            {steps.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => handleStepClick(index)}
+                className={`h-2 w-8 rounded-full transition-all duration-300 ${
+                  activeStep === index
+                    ? "bg-[#00D707]"
+                    : "bg-gray-600 hover:bg-gray-500"
+                }`}
+                aria-label={`Go to step ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+
         {/* Steps Grid */}
-        <div className="mb-16 grid grid-cols-1 gap-8 lg:grid-cols-3">
+        <div className="mb-12 grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
           {steps.map((step, index) => {
             const IconComponent = step.icon;
             const isActive = activeStep === index;
@@ -134,48 +172,51 @@ const HowItWorksSection = () => {
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.7, delay: index * 0.2 }}
-                className={`group relative transition-all duration-500 ${
+                transition={{ duration: 0.7, delay: index * 0.1 }}
+                className={`group relative cursor-pointer transition-all duration-500 ${
                   isActive ? "scale-105" : "hover:scale-102"
                 }`}
+                onClick={() => handleStepClick(index)}
+                onMouseEnter={() => setIsPaused(true)}
+                onMouseLeave={() => setIsPaused(false)}
               >
                 {/* Step Card */}
                 <div
-                  className={`relative rounded-3xl border-2 p-8 transition-all duration-500 ${step.bgColor} ${step.borderColor} ${isActive ? "border-opacity-60 shadow-2xl" : "border-opacity-20 hover:border-opacity-40"} backdrop-blur-sm`}
+                  className={`relative rounded-2xl border-2 p-6 transition-all duration-500 sm:rounded-3xl sm:p-8 ${step.bgColor} ${step.borderColor} ${isActive ? "border-opacity-60 shadow-2xl" : "border-opacity-20 hover:border-opacity-40"} backdrop-blur-sm`}
                 >
                   {/* Step Number */}
                   <div
-                    className={`absolute -top-4 -left-4 flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r ${step.color} text-lg font-bold text-white shadow-lg`}
+                    className={`absolute -top-3 -left-3 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r ${step.color} text-sm font-bold text-white shadow-lg sm:-top-4 sm:-left-4 sm:h-12 sm:w-12 sm:text-lg`}
                   >
                     {step.id}
                   </div>
 
                   {/* Icon */}
-                  <div className="mb-6 flex justify-center">
+                  <div className="mb-4 flex justify-center sm:mb-6">
                     <div
-                      className={`flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-r ${step.color} text-white shadow-lg`}
+                      className={`flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-r ${step.color} text-white shadow-lg sm:h-16 sm:w-16 sm:rounded-2xl`}
                     >
-                      <IconComponent className="h-8 w-8" />
+                      <IconComponent className="h-6 w-6 sm:h-8 sm:w-8" />
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="text-center">
-                    <h3 className="mb-4 text-xl font-bold md:text-2xl">
+                    <h3 className="mb-3 text-lg font-bold sm:mb-4 sm:text-xl md:text-2xl">
                       {step.title}
                     </h3>
-                    <p className="mb-6 leading-relaxed text-gray-300">
+                    <p className="mb-4 text-sm leading-relaxed text-gray-300 sm:mb-6 sm:text-base">
                       {step.description}
                     </p>
 
                     {/* Details List */}
-                    <div className="space-y-2">
+                    <div className="space-y-1.5 sm:space-y-2">
                       {step.details.map((detail, detailIndex) => (
                         <div
                           key={detailIndex}
-                          className="flex items-center gap-2 text-sm text-gray-400"
+                          className="flex items-center gap-2 text-xs text-gray-400 sm:text-sm"
                         >
-                          <CheckCircle className="h-4 w-4 flex-shrink-0 text-[#00D707]" />
+                          <CheckCircle className="h-3 w-3 flex-shrink-0 text-[#00D707] sm:h-4 sm:w-4" />
                           <span>{detail}</span>
                         </div>
                       ))}
@@ -184,7 +225,7 @@ const HowItWorksSection = () => {
 
                   {/* Hover Effect */}
                   <div
-                    className={`absolute inset-0 rounded-3xl bg-gradient-to-r ${step.color} opacity-0 transition-opacity duration-500 group-hover:opacity-5`}
+                    className={`absolute inset-0 rounded-2xl bg-gradient-to-r ${step.color} opacity-0 transition-opacity duration-500 group-hover:opacity-5 sm:rounded-3xl`}
                   />
                 </div>
               </motion.div>
@@ -195,38 +236,46 @@ const HowItWorksSection = () => {
         {/* Active Step Showcase */}
         <motion.div
           key={activeStep}
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="relative"
         >
-          <div className="rounded-3xl border border-gray-800 bg-gradient-to-r from-[#18191B] to-[#0a0a0a] p-8">
-            <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
+          <div className="rounded-2xl border border-gray-800 bg-gradient-to-r from-[#18191B] to-[#0a0a0a] p-6 sm:rounded-3xl sm:p-8">
+            <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2 lg:gap-8">
               {/* Image */}
-              <div className="relative">
-                <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <div className="relative order-2 lg:order-1">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-xl sm:rounded-2xl">
                   <img
                     src={steps[activeStep]?.image || ""}
                     alt={steps[activeStep]?.title || ""}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+
+                  {/* Floating elements for mobile */}
+                  <div className="absolute -top-2 -right-2 flex h-8 w-8 animate-bounce items-center justify-center rounded-full bg-[#00D707] sm:hidden">
+                    <Smartphone className="h-4 w-4 text-black" />
+                  </div>
+                  <div className="absolute -bottom-2 -left-2 flex h-6 w-6 animate-pulse items-center justify-center rounded-full bg-yellow-400 sm:hidden">
+                    <Clock className="h-3 w-3 text-black" />
+                  </div>
                 </div>
               </div>
 
               {/* Content */}
-              <div className="space-y-6">
+              <div className="order-1 space-y-4 sm:space-y-6 lg:order-2">
                 <div>
-                  <h3 className="mb-4 text-3xl font-bold md:text-4xl">
+                  <h3 className="mb-3 text-2xl font-bold sm:mb-4 sm:text-3xl md:text-4xl">
                     {steps[activeStep]?.title || ""}
                   </h3>
-                  <p className="text-lg leading-relaxed text-gray-300">
+                  <p className="text-base leading-relaxed text-gray-300 sm:text-lg">
                     {steps[activeStep]?.description || ""}
                   </p>
                 </div>
 
                 {/* Features */}
-                <div className="space-y-3">
+                <div className="space-y-2 sm:space-y-3">
                   {steps[activeStep]?.details?.map((detail, index) => (
                     <motion.div
                       key={index}
@@ -235,10 +284,12 @@ const HowItWorksSection = () => {
                       transition={{ delay: index * 0.1 }}
                       className="flex items-center gap-3"
                     >
-                      <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-[#00D707]">
-                        <CheckCircle className="h-4 w-4 text-black" />
+                      <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#00D707] sm:h-8 sm:w-8">
+                        <CheckCircle className="h-3 w-3 text-black sm:h-4 sm:w-4" />
                       </div>
-                      <span className="text-gray-300">{detail}</span>
+                      <span className="text-sm text-gray-300 sm:text-base">
+                        {detail}
+                      </span>
                     </motion.div>
                   ))}
                 </div>
@@ -247,10 +298,10 @@ const HowItWorksSection = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`inline-flex cursor-pointer items-center gap-2 rounded-xl bg-[#00D707] px-8 py-4 font-semibold text-black ${steps[activeStep]?.color || "from-[#00D707] to-[#00B300]"} shadow-lg transition-all duration-300 hover:shadow-xl`}
+                  className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#00D707] px-6 py-3 font-semibold text-black shadow-lg transition-all duration-300 hover:shadow-xl sm:w-auto sm:px-8 sm:py-4"
                 >
                   Get Started
-                  <ArrowRight className="h-5 w-5" />
+                  <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />
                 </motion.button>
               </div>
             </div>

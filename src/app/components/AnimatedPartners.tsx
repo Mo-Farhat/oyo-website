@@ -3,40 +3,44 @@ import { useEffect, useState } from "react";
 
 const logos = [
   {
-    name: "Vercel",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881430/vercel_wordmark_dark_mhv8u8.svg",
+    name: "Cafe 95",
+    url: "/partner-logos/cafe95.png",
   },
   {
-    name: "Nextjs",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881475/nextjs_logo_dark_gfkf8m.svg",
+    name: "Country Kitchen",
+    url: "/partner-logos/countrykitchen.png",
   },
   {
-    name: "Prime",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/t2awrrfzdvmg1chnzyfr.svg",
+    name: "GFC",
+    url: "/partner-logos/gfc.png",
   },
   {
-    name: "Trustpilot",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tkfspxqmjflfllbuqxsi.svg",
+    name: "Hot Bread",
+    url: "/partner-logos/hotbread.png",
   },
   {
-    name: "Webflow",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/nymiivu48d5lywhf9rpf.svg",
+    name: "Hot Pot",
+    url: "/partner-logos/hotpot.png",
   },
   {
-    name: "Airbnb",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/pmblusboe7vkw8vxdknx.svg",
+    name: "Mr Baker",
+    url: "/partner-logos/mrbaker.png",
   },
   {
-    name: "Tina",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/afqhiygywyphuou6xtxc.svg",
+    name: "Open Kitchen",
+    url: "/partner-logos/openkitchen.png",
   },
   {
-    name: "Stackoverflow",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/ts1j4mkooxqmscgptafa.svg",
+    name: "Pizza Picasso",
+    url: "/partner-logos/Pizza Picasso.png",
   },
   {
-    name: "mistral",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tyos2ayezryjskox3wzs.svg",
+    name: "Spice Hub",
+    url: "/partner-logos/spicehub.png",
+  },
+  {
+    name: "Star Restaurant",
+    url: "/partner-logos/star-restaurant.png",
   },
 ];
 
@@ -46,7 +50,7 @@ const AnimatedLogoCloud = () => {
   useEffect(() => {
     const animateLogos = () => {
       setTranslateX((prev) => {
-        const logoWidth = 112 + 24; // w-28 (112px) + gap-6 (24px)
+        const logoWidth = 112 + 30; // w-28 (112px) + gap-6 (24px)
         const totalWidth = logoWidth * logos.length;
         return prev <= -totalWidth ? 0 : prev - 1;
       });
@@ -65,7 +69,7 @@ const AnimatedLogoCloud = () => {
             {Array.from({ length: 3 }).map((_, setIndex) => (
               <div
                 key={setIndex}
-                className="flex shrink-0 gap-6"
+                className="flex shrink-0 gap-10"
                 style={{
                   transform: `translateX(${translateX}px)`,
                   transition: "transform 0.02s linear",
@@ -75,7 +79,7 @@ const AnimatedLogoCloud = () => {
                   <img
                     key={`${setIndex}-${logoIndex}`}
                     src={logo.url}
-                    className="h-10 w-28 px-2 opacity-70 brightness-0 invert transition-opacity duration-300 hover:opacity-100"
+                    className="size-40 opacity-100 brightness-100 transition-opacity duration-300 hover:opacity-100"
                     alt={logo.name}
                   />
                 ))}
