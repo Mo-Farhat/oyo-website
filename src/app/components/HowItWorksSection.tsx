@@ -184,13 +184,6 @@ const HowItWorksSection = () => {
                 <div
                   className={`relative rounded-2xl border-2 p-6 transition-all duration-500 sm:rounded-3xl sm:p-8 ${step.bgColor} ${step.borderColor} ${isActive ? "border-opacity-60 shadow-2xl" : "border-opacity-20 hover:border-opacity-40"} backdrop-blur-sm`}
                 >
-                  {/* Step Number */}
-                  <div
-                    className={`absolute -top-3 -left-3 flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r ${step.color} text-sm font-bold text-white shadow-lg sm:-top-4 sm:-left-4 sm:h-12 sm:w-12 sm:text-lg`}
-                  >
-                    {step.id}
-                  </div>
-
                   {/* Icon */}
                   <div className="mb-4 flex justify-center sm:mb-6">
                     <div
