@@ -22,7 +22,7 @@ const steps = [
       "Get the Oyo app from Google Play or App Store. Create your account in seconds.",
     icon: Download,
     image: "/download.jpg",
-    color: "from-[#00D707] to-[#00B300]",
+    color: "from-[#648402] to-[#4A6202]",
     bgColor: "bg-gray-800/20",
     borderColor: "border-gray-700/30",
     details: [
@@ -35,10 +35,10 @@ const steps = [
     id: 2,
     title: "Browse & Order",
     description:
-      "Explore local restaurants, view menus, and place your order with just a few taps.",
+      "Explore local businesses, view products, and place your order with just a few taps.",
     icon: Search,
     image: "/hand-smartphone.jpeg",
-    color: "from-[#00D707] to-[#00B300]",
+    color: "from-[#648402] to-[#4A6202]",
     bgColor: "bg-gray-800/20",
     borderColor: "border-gray-700/30",
     details: [
@@ -51,10 +51,10 @@ const steps = [
     id: 3,
     title: "Track & Enjoy",
     description:
-      "Follow your order in real-time and enjoy fresh, hot meals delivered to your door.",
+      "Follow your order in real-time and enjoy fresh products delivered to your door.",
     icon: Truck,
     image: "/package-delivery.jpeg",
-    color: "from-[#00D707] to-[#00B300]",
+    color: "from-[#648402] to-[#4A6202]",
     bgColor: "bg-gray-800/20",
     borderColor: "border-gray-700/30",
     details: [
@@ -138,7 +138,7 @@ const HowItWorksSection = () => {
             How It Works
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-gray-300 md:text-xl">
-            Get your favorite meals delivered in just 3 simple steps
+            Get your essential goods delivered in just 3 simple steps
           </p>
         </motion.div>
 
@@ -151,7 +151,7 @@ const HowItWorksSection = () => {
                 onClick={() => handleStepClick(index)}
                 className={`h-2 w-8 rounded-full transition-all duration-300 ${
                   activeStep === index
-                    ? "bg-[#00D707]"
+                    ? "bg-[#648402]"
                     : "bg-gray-600 hover:bg-gray-500"
                 }`}
                 aria-label={`Go to step ${index + 1}`}
@@ -209,7 +209,7 @@ const HowItWorksSection = () => {
                           key={detailIndex}
                           className="flex items-center gap-2 text-xs text-gray-400 sm:text-sm"
                         >
-                          <CheckCircle className="h-3 w-3 flex-shrink-0 text-[#00D707] sm:h-4 sm:w-4" />
+                          <CheckCircle className="h-3 w-3 flex-shrink-0 text-[#648402] sm:h-4 sm:w-4" />
                           <span>{detail}</span>
                         </div>
                       ))}
@@ -247,7 +247,7 @@ const HowItWorksSection = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
 
                   {/* Floating elements for mobile */}
-                  <div className="absolute -top-2 -right-2 flex h-8 w-8 animate-bounce items-center justify-center rounded-full bg-[#00D707] sm:hidden">
+                  <div className="absolute -top-2 -right-2 flex h-8 w-8 animate-bounce items-center justify-center rounded-full bg-[#648402] sm:hidden">
                     <Smartphone className="h-4 w-4 text-black" />
                   </div>
                   <div className="absolute -bottom-2 -left-2 flex h-6 w-6 animate-pulse items-center justify-center rounded-full bg-yellow-400 sm:hidden">
@@ -277,8 +277,8 @@ const HowItWorksSection = () => {
                       transition={{ delay: index * 0.1 }}
                       className="flex items-center gap-3"
                     >
-                      <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#00D707] sm:h-8 sm:w-8">
-                        <CheckCircle className="h-3 w-3 text-black sm:h-4 sm:w-4" />
+                      <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-[#648402] sm:h-8 sm:w-8">
+                        <CheckCircle className="h-3 w-3 text-white sm:h-4 sm:w-4" />
                       </div>
                       <span className="text-sm text-gray-300 sm:text-base">
                         {detail}
@@ -291,7 +291,7 @@ const HowItWorksSection = () => {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#00D707] px-6 py-3 font-semibold text-black shadow-lg transition-all duration-300 hover:shadow-xl sm:w-auto sm:px-8 sm:py-4"
+                  className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#648402] px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-xl sm:w-auto sm:px-8 sm:py-4"
                 >
                   Get Started
                   <ArrowRight className="h-4 w-4 sm:h-5 sm:w-5" />

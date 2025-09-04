@@ -34,7 +34,7 @@ const PrivacyPolicySection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Shield className="h-8 w-8 text-[#00D707]" />
+            <Shield className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Information We Collect</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -63,7 +63,7 @@ const PrivacyPolicySection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Eye className="h-8 w-8 text-[#00D707]" />
+            <Eye className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">
               How We Use Your Information
             </h2>
@@ -89,7 +89,7 @@ const PrivacyPolicySection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Lock className="h-8 w-8 text-[#00D707]" />
+            <Lock className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Data Security</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -115,7 +115,7 @@ const PrivacyPolicySection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Users className="h-8 w-8 text-[#00D707]" />
+            <Users className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Information Sharing</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -142,7 +142,7 @@ const PrivacyPolicySection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Calendar className="h-8 w-8 text-[#00D707]" />
+            <Calendar className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Data Retention</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -168,7 +168,7 @@ const PrivacyPolicySection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Mail className="h-8 w-8 text-[#00D707]" />
+            <Mail className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Contact Us</h2>
           </div>
           <div className="space-y-4 text-gray-300">

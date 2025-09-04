@@ -31,26 +31,26 @@ const Footer = () => {
               <img src="/logo.png" alt="Oyo Eats" className="h-10 w-10" />
             </div>
             <p className="text-sm leading-relaxed text-gray-400">
-              The leading food delivery service in Nawalapitiya, connecting you
-              with the best local restaurants for quick, fresh, and delicious
-              meals.
+              The leading delivery service in Nawalapitiya, connecting you with
+              the best local businesses for restaurants, bakeries, pharmacies,
+              and pet supplies.
             </p>
             <div className="flex gap-4">
               <a
                 href="#"
-                className="rounded-lg bg-[#1E1E1E] p-2 text-gray-400 transition-colors hover:bg-[#2A2A2A] hover:text-[#00D707]"
+                className="rounded-lg bg-[#1E1E1E] p-2 text-gray-400 transition-colors hover:bg-[#2A2A2A] hover:text-[#648402]"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="rounded-lg bg-[#1E1E1E] p-2 text-gray-400 transition-colors hover:bg-[#2A2A2A] hover:text-[#00D707]"
+                className="rounded-lg bg-[#1E1E1E] p-2 text-gray-400 transition-colors hover:bg-[#2A2A2A] hover:text-[#648402]"
               >
                 <Twitter className="h-5 w-5" />
               </a>
               <a
                 href="#"
-                className="rounded-lg bg-[#1E1E1E] p-2 text-gray-400 transition-colors hover:bg-[#2A2A2A] hover:text-[#00D707]"
+                className="rounded-lg bg-[#1E1E1E] p-2 text-gray-400 transition-colors hover:bg-[#2A2A2A] hover:text-[#648402]"
               >
                 <Instagram className="h-5 w-5" />
               </a>
@@ -99,19 +99,19 @@ const Footer = () => {
             <h3 className="text-lg font-semibold text-white">Contact Us</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400">
-                <Mail className="h-4 w-4 text-[#00D707]" />
+                <Mail className="h-4 w-4 text-[#648402]" />
                 <span className="text-sm">support@oyoeats.lk</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
-                <Phone className="h-4 w-4 text-[#00D707]" />
+                <Phone className="h-4 w-4 text-[#648402]" />
                 <span className="text-sm">+94 72 878 7872 </span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
-                <MapPin className="h-4 w-4 text-[#00D707]" />
+                <MapPin className="h-4 w-4 text-[#648402]" />
                 <span className="text-sm">Nawalapitiya, Sri Lanka</span>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
-                <Clock className="h-4 w-4 text-[#00D707]" />
+                <Clock className="h-4 w-4 text-[#648402]" />
                 <span className="text-sm">24/7 Support</span>
               </div>
             </div>
@@ -121,12 +121,12 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-white">Download App</h3>
             <p className="text-sm text-gray-400">
-              Get the Oyo Eats app for the best food delivery experience
+              Get the Oyo Eats app for the best delivery experience
             </p>
             <div className="space-y-3">
               <button
                 onClick={() => scrollToSection("#download")}
-                className="flex w-full cursor-pointer items-center gap-2 rounded-lg bg-[#00D707] px-4 py-2 text-sm font-medium text-black transition-colors hover:bg-[#00B300]"
+                className="flex w-full cursor-pointer items-center gap-2 rounded-lg bg-[#648402] px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[#4A6202]"
               >
                 <Download className="h-4 w-4" />
                 Android App
@@ -157,19 +157,19 @@ const Footer = () => {
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
             <a
               href="/privacy-policy"
-              className="cursor-pointer transition-colors hover:text-[#00D707]"
+              className="cursor-pointer transition-colors hover:text-[#648402]"
             >
               Privacy Policy
             </a>
             <a
               href="/terms-of-service"
-              className="cursor-pointer transition-colors hover:text-[#00D707]"
+              className="cursor-pointer transition-colors hover:text-[#648402]"
             >
               Terms of Service
             </a>
             <button
               onClick={() => scrollToSection("#contact")}
-              className="cursor-pointer transition-colors hover:text-[#00D707]"
+              className="cursor-pointer transition-colors hover:text-[#648402]"
             >
               Contact
             </button>
@@ -179,9 +179,9 @@ const Footer = () => {
         {/* Additional Info */}
         <div className="mt-8 border-t border-gray-700 pt-6 text-center">
           <p className="text-xs text-gray-600">
-            Oyo Eats is a registered trademark. Food delivery available within
-            20km radius of Nawalapitiya. Delivery times may vary based on
-            location and restaurant preparation time.
+            Oyo Eats is a registered trademark. Delivery service available
+            within 20km radius of Nawalapitiya. Delivery times may vary based on
+            location and business preparation time.
           </p>
         </div>
       </div>

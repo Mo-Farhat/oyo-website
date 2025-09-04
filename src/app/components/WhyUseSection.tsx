@@ -7,14 +7,14 @@ import { cn } from "~/lib/utils";
 function WhyUseSection() {
   const features = [
     {
-      title: "🍱 Made for Food Lovers",
+      title: "🛍️ Made for Everyone",
       description:
-        "Whether you're a foodie, a late-night snacker, or a busy professional, Oyo Eats is designed for anyone who wants great food delivered without hassle.",
+        "Whether you need groceries, medicine, pet supplies, or meals, Oyo Eats is designed for anyone who wants essential goods delivered without hassle.",
     },
     {
       title: "🚀 Ease of use",
       description:
-        "No confusing menus. No long sign-ups. Just open the app, browse nearby options, and eat.",
+        "No confusing menus. No long sign-ups. Just open the app, browse nearby options, and order.",
     },
     {
       title: "💸 Fair Pricing",
@@ -24,12 +24,12 @@ function WhyUseSection() {
     {
       title: "📶 Reliable, Every Time",
       description:
-        "We dont go down. Our app is built to work whenever you're hungry—even during rush hours.",
+        "We dont go down. Our app is built to work whenever you need something—even during rush hours.",
     },
     {
       title: "👨‍👩‍👧 Share with Friends",
       description:
-        "Share your favorite dishes, delivery addresses, and restaurant links easily. Food is better when shared.",
+        "Share your favorite stores, delivery addresses, and business links easily. Shopping is better when shared.",
     },
     {
       title: "📞 Always-On Support",
@@ -44,7 +44,7 @@ function WhyUseSection() {
     {
       title: "🍔 And More to Come",
       description:
-        "We’re just getting started. More restaurants, better deals, and smarter features are always on the menu.",
+        "We're just getting started. More businesses, better deals, and smarter features are always coming.",
     },
   ];
   return (
@@ -57,11 +57,11 @@ function WhyUseSection() {
         className="mx-auto max-w-3xl text-center"
       >
         <h2 className="mb-4 text-2xl font-bold md:text-3xl">
-          Why Use OYO Eats?
+          Why Use Oyo Eats?
         </h2>
         <p className="mx-auto mb-8 max-w-2xl text-gray-400">
-          Discover how Oyo Eats transforms the way you find and enjoy local
-          food—faster, simpler, and smarter.
+          Discover how Oyo Eats transforms the way you find and get essential
+          goods and services—faster, simpler, and smarter.
         </p>
       </motion.div>
       <div className="relative z-10 mx-auto grid max-w-7xl grid-cols-1 py-10 md:grid-cols-2 lg:grid-cols-4">
@@ -98,7 +98,7 @@ const Feature = ({
       )}
 
       <div className="relative z-10 mb-2 px-10 text-lg font-bold">
-        <div className="absolute inset-y-0 left-0 h-6 w-1 origin-center rounded-tr-full rounded-br-full bg-neutral-300 transition-all duration-200 group-hover/feature:h-8 group-hover/feature:bg-[#00D707] dark:bg-neutral-700" />
+        <div className="absolute inset-y-0 left-0 h-6 w-1 origin-center rounded-tr-full rounded-br-full bg-neutral-300 transition-all duration-200 group-hover/feature:h-8 group-hover/feature:bg-[#648402] dark:bg-neutral-700" />
         <span className="inline-block text-white transition duration-200 group-hover/feature:translate-x-2">
           {title}
         </span>

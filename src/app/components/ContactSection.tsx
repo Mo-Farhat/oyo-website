@@ -75,7 +75,7 @@ const ContactSection = () => {
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <div className="mt-1 rounded-lg bg-white/10 p-2">
-                    <Mail className="h-6 w-6 text-[#00D707]" />
+                    <Mail className="h-6 w-6 text-[#648402]" />
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-white">Email</h3>
@@ -86,7 +86,7 @@ const ContactSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="mt-1 rounded-lg bg-white/10 p-2">
-                    <Phone className="h-6 w-6 text-[#00D707]" />
+                    <Phone className="h-6 w-6 text-[#648402]" />
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-white">Phone</h3>
@@ -97,7 +97,7 @@ const ContactSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="mt-1 rounded-lg bg-white/10 p-2">
-                    <MapPin className="h-6 w-6 text-[#00D707]" />
+                    <MapPin className="h-6 w-6 text-[#648402]" />
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-white">Address</h3>
@@ -113,7 +113,7 @@ const ContactSection = () => {
 
                 <div className="flex items-start gap-4">
                   <div className="mt-1 rounded-lg bg-white/10 p-2">
-                    <Clock className="h-6 w-6 text-[#00D707]" />
+                    <Clock className="h-6 w-6 text-[#648402]" />
                   </div>
                   <div>
                     <h3 className="mb-1 font-semibold text-white">
@@ -147,7 +147,7 @@ const ContactSection = () => {
                 animate={{ opacity: 1, scale: 1 }}
                 className="py-8 text-center"
               >
-                <CheckCircle className="mx-auto mb-4 h-16 w-16 text-[#00D707]" />
+                <CheckCircle className="mx-auto mb-4 h-16 w-16 text-[#648402]" />
                 <h3 className="mb-2 text-xl font-semibold text-white">
                   Message Sent Successfully!
                 </h3>
@@ -169,7 +169,7 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                      className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                       placeholder="Enter your name"
                     />
                   </div>
@@ -184,7 +184,7 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                      className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                       placeholder="Enter your email"
                     />
                   </div>
@@ -200,7 +200,7 @@ const ContactSection = () => {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                    className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                     placeholder="What is this about?"
                   />
                 </div>
@@ -215,14 +215,14 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full resize-none rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                    className="w-full resize-none rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                     placeholder="Tell us how we can help you..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#00D707] px-8 py-3 font-semibold text-black transition-colors hover:bg-[#00B300]"
+                  className="flex w-full items-center justify-center gap-2 rounded-lg bg-[#648402] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#4A6202]"
                 >
                   <Send className="h-5 w-5" />
                   Send Message

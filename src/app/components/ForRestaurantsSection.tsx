@@ -78,12 +78,12 @@ const ForRestaurantsSection = () => {
         >
           <div className="mb-16 text-center">
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-              Grow Your Business with OYO Eats
+              Grow Your Business with Oyo Eats
             </h2>
             <p className="mx-auto max-w-3xl text-lg leading-relaxed text-gray-300">
               Join our growing network of restaurant partners and reach hundreds
               of customers daily. Whether you run a restaurant, café, or food
-              stall, OYO Eats helps you expand your reach and increase your
+              stall, Oyo Eats helps you expand your reach and increase your
               revenue through our reliable delivery platform.
             </p>
           </div>
@@ -97,7 +97,7 @@ const ForRestaurantsSection = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-6 text-center"
             >
-              <Users className="mx-auto mb-4 h-12 w-12 text-[#00D707]" />
+              <Users className="mx-auto mb-4 h-12 w-12 text-[#648402]" />
               <h3 className="mb-3 text-xl font-semibold">
                 Reach More Customers
               </h3>
@@ -114,7 +114,7 @@ const ForRestaurantsSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-6 text-center"
             >
-              <Clock className="mx-auto mb-4 h-12 w-12 text-[#00D707]" />
+              <Clock className="mx-auto mb-4 h-12 w-12 text-[#648402]" />
               <h3 className="mb-3 text-xl font-semibold">24/7 Platform</h3>
               <p className="text-gray-400">
                 Your menu is always available to customers, even when you're
@@ -129,7 +129,7 @@ const ForRestaurantsSection = () => {
               transition={{ duration: 0.5, delay: 0.3 }}
               className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-6 text-center"
             >
-              <ChefHat className="mx-auto mb-4 h-12 w-12 text-[#00D707]" />
+              <ChefHat className="mx-auto mb-4 h-12 w-12 text-[#648402]" />
               <h3 className="mb-3 text-xl font-semibold">Focus on Food</h3>
               <p className="text-gray-400">
                 We handle delivery logistics while you focus on creating amazing
@@ -146,7 +146,7 @@ const ForRestaurantsSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="rounded-xl border border-gray-700 bg-[#2E3135] p-8 shadow-lg"
           >
-            <h3 className="mb-4 text-center text-2xl font-semibold text-[#00D707]">
+            <h3 className="mb-4 text-center text-2xl font-semibold text-[#648402]">
               Ready to Partner With Us?
             </h3>
             <p className="mx-auto mb-6 max-w-2xl text-center text-gray-300">
@@ -157,14 +157,14 @@ const ForRestaurantsSection = () => {
             <div className="flex flex-col justify-center gap-4 sm:flex-row">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[#00D707] px-6 py-3 font-semibold text-black shadow transition-colors hover:bg-[#00B300]"
+                className="inline-flex cursor-pointer items-center gap-2 rounded-lg bg-[#648402] px-6 py-3 font-semibold text-white shadow transition-colors hover:bg-[#4A6202]"
               >
                 <FileText className="h-5 w-5" />
                 Fill Partnership Form
               </button>
               <a
                 href="mailto:partner@oyoeats.lk"
-                className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-green-700 shadow transition-colors hover:bg-gray-100"
+                className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 font-semibold text-[#648402] shadow transition-colors hover:bg-gray-100"
               >
                 <Mail className="h-5 w-5" />
                 Email Us
@@ -229,7 +229,7 @@ const ForRestaurantsSection = () => {
                         value={formData.restaurantName}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                         placeholder="Enter restaurant name"
                       />
                     </div>
@@ -245,7 +245,7 @@ const ForRestaurantsSection = () => {
                         value={formData.ownerName}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                         placeholder="Enter owner name"
                       />
                     </div>
@@ -261,7 +261,7 @@ const ForRestaurantsSection = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                         placeholder="Enter email address"
                       />
                     </div>
@@ -277,7 +277,7 @@ const ForRestaurantsSection = () => {
                         value={formData.phone}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                         placeholder="Enter phone number"
                       />
                     </div>
@@ -293,7 +293,7 @@ const ForRestaurantsSection = () => {
                         value={formData.address}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                         placeholder="Enter full address"
                       />
                     </div>
@@ -308,7 +308,7 @@ const ForRestaurantsSection = () => {
                         value={formData.cuisineType}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white transition-colors focus:border-[#648402] focus:outline-none"
                       >
                         <option value="">Select cuisine type</option>
                         <option value="sri-lankan">
@@ -334,7 +334,7 @@ const ForRestaurantsSection = () => {
                         value={formData.partnershipType}
                         onChange={handleInputChange}
                         required
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white transition-colors focus:border-[#648402] focus:outline-none"
                       >
                         <option value="restaurant">Restaurant</option>
                         <option value="cafe">Café</option>
@@ -354,7 +354,7 @@ const ForRestaurantsSection = () => {
                         name="openingHours"
                         value={formData.openingHours}
                         onChange={handleInputChange}
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                         placeholder="e.g., 8:00 AM - 10:00 PM"
                       />
                     </div>
@@ -368,7 +368,7 @@ const ForRestaurantsSection = () => {
                         name="deliveryRadius"
                         value={formData.deliveryRadius}
                         onChange={handleInputChange}
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white transition-colors focus:border-[#648402] focus:outline-none"
                       >
                         <option value="">Select radius</option>
                         <option value="5km">5 km</option>
@@ -387,7 +387,7 @@ const ForRestaurantsSection = () => {
                         name="currentOrders"
                         value={formData.currentOrders}
                         onChange={handleInputChange}
-                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white transition-colors focus:border-[#00D707] focus:outline-none"
+                        className="w-full rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white transition-colors focus:border-[#648402] focus:outline-none"
                       >
                         <option value="">Select range</option>
                         <option value="0-10">0-10 orders</option>
@@ -408,7 +408,7 @@ const ForRestaurantsSection = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       rows={4}
-                      className="w-full resize-none rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+                      className="w-full resize-none rounded-lg border border-gray-600 bg-[#2A2A2A] px-4 py-3 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
                       placeholder="Tell us about your restaurant, special dishes, or any questions you have..."
                     />
                   </div>
@@ -424,7 +424,7 @@ const ForRestaurantsSection = () => {
                     </button>
                     <button
                       type="submit"
-                      className="rounded-lg bg-[#00D707] px-8 py-3 font-semibold text-black transition-colors hover:bg-[#00B300]"
+                      className="rounded-lg bg-[#648402] px-8 py-3 font-semibold text-white transition-colors hover:bg-[#4A6202]"
                     >
                       Submit Application
                     </button>

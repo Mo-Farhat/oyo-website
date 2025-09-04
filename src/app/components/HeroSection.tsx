@@ -136,19 +136,19 @@ const HeroSection = () => {
             }}
           >
             <h1 className="mb-6 text-3xl leading-tight font-bold sm:text-4xl md:text-4xl lg:text-5xl xl:text-7xl">
-              Bringing the best food around you,{" "}
-              <span className="text-[#00D707]">instantly.</span>
+              Bringing essential goods and services{" "}
+              <span className="text-[#648402]">to your doorstep.</span>
             </h1>
             <p className="mb-8 text-base leading-relaxed text-gray-300 sm:text-lg md:text-xl lg:text-2xl">
-              Your go-to app for quick, affordable, and delicious meals from
-              local restaurants in Nawalapitiya.
+              Your go-to app for restaurants, bakeries, pharmacies, and pet
+              supplies from local businesses in Nawalapitiya.
             </p>
             <div className="flex flex-col justify-center gap-4 sm:flex-row lg:justify-start">
               <motion.a
                 href="#"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#00D707] px-6 py-3 text-sm font-semibold text-black shadow-lg transition-all duration-300 hover:bg-[#00B300] hover:shadow-xl sm:px-8 sm:py-4 sm:text-base"
+                className="inline-flex items-center justify-center rounded-md border border-transparent bg-[#648402] px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:bg-[#4A6202] hover:shadow-xl sm:px-8 sm:py-4 sm:text-base"
               >
                 Download On Android
               </motion.a>
@@ -156,19 +156,13 @@ const HeroSection = () => {
                 href="#"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center justify-center rounded-md border border-gray-700 bg-[#18191B] px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:border-[#00D707] hover:bg-[#2E3135] sm:px-8 sm:py-4 sm:text-base"
+                className="inline-flex items-center justify-center rounded-md border border-gray-700 bg-[#18191B] px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all duration-300 hover:border-[#648402] hover:bg-[#2E3135] sm:px-8 sm:py-4 sm:text-base"
               >
                 Download On iOS
               </motion.a>
             </div>
 
             {/* Trust Indicators */}
-            <div className="mt-8 flex flex-col items-center gap-4 text-xs text-gray-500 sm:flex-row lg:justify-start">
-              <div className="flex items-center gap-2">
-                <span className="text-[#00D707]">✓</span>
-                <span>24/7 customer support</span>
-              </div>
-            </div>
           </motion.div>
 
           {/* Right Column: Mobile UI Mockup (Layer 5) */}

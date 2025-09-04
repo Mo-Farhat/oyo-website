@@ -30,7 +30,7 @@ const Header = () => {
           {/* Download Button - Prominent and interactive */}
           <motion.a
             href="#download"
-            className="ml-2 inline-flex items-center rounded-lg bg-[#0EF406] px-5 py-2 text-base font-bold text-black shadow-md transition-colors duration-200 hover:bg-[#00B300] focus:ring-2 focus:ring-[#F97316]/50 focus:outline-none"
+            className="ml-2 inline-flex items-center rounded-lg bg-[#648402] px-5 py-2 text-lg font-bold text-white shadow-md transition-colors duration-200 hover:bg-[#4A6202] focus:ring-2 focus:ring-[#F97316]/50 focus:outline-none"
             whileHover={{ scale: 1.05 }} // Subtle scale on hover
             whileTap={{ scale: 0.95 }}
           >
@@ -85,7 +85,7 @@ const Header = () => {
             {/* Mobile Download Button - Consistent with desktop styling */}
             <motion.a
               href="#download"
-              className="mt-2 inline-flex items-center justify-center rounded-full bg-[#00D707] px-5 py-2 text-base font-semibold text-white shadow-md transition-colors duration-200 hover:bg-[#00B300] focus:ring-2 focus:ring-[#F97316]/50 focus:outline-none"
+              className="mt-2 inline-flex items-center justify-center rounded-full bg-[#648402] px-5 py-2 text-base font-semibold text-white shadow-md transition-colors duration-200 hover:bg-[#4A6202] focus:ring-2 focus:ring-[#F97316]/50 focus:outline-none"
               onClick={() => setMenuOpen(false)}
               whileHover={{ scale: 1.02 }} // Subtle scale on hover
               whileTap={{ scale: 0.98 }}

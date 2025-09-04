@@ -44,7 +44,7 @@ const TermsOfServiceSection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <FileText className="h-8 w-8 text-[#00D707]" />
+            <FileText className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Acceptance of Terms</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -69,7 +69,7 @@ const TermsOfServiceSection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Users className="h-8 w-8 text-[#00D707]" />
+            <Users className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">User Accounts</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -97,7 +97,7 @@ const TermsOfServiceSection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Truck className="h-8 w-8 text-[#00D707]" />
+            <Truck className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Ordering and Delivery</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -128,7 +128,7 @@ const TermsOfServiceSection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <CreditCard className="h-8 w-8 text-[#00D707]" />
+            <CreditCard className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Payment and Billing</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -152,7 +152,7 @@ const TermsOfServiceSection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <AlertTriangle className="h-8 w-8 text-[#00D707]" />
+            <AlertTriangle className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Prohibited Activities</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -176,12 +176,12 @@ const TermsOfServiceSection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Shield className="h-8 w-8 text-[#00D707]" />
+            <Shield className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Limitation of Liability</h2>
           </div>
           <div className="space-y-4 text-gray-300">
             <p>
-              OYO Eats shall not be liable for any indirect, incidental,
+              Oyo Eats shall not be liable for any indirect, incidental,
               special, consequential, or punitive damages, including without
               limitation, loss of profits, data, use, goodwill, or other
               intangible losses, resulting from your use of the service.
@@ -202,7 +202,7 @@ const TermsOfServiceSection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <Gavel className="h-8 w-8 text-[#00D707]" />
+            <Gavel className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Governing Law</h2>
           </div>
           <div className="space-y-4 text-gray-300">
@@ -227,7 +227,7 @@ const TermsOfServiceSection = () => (
           className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8"
         >
           <div className="mb-4 flex items-center gap-3">
-            <FileText className="h-8 w-8 text-[#00D707]" />
+            <FileText className="h-8 w-8 text-[#648402]" />
             <h2 className="text-2xl font-semibold">Changes to Terms</h2>
           </div>
           <div className="space-y-4 text-gray-300">

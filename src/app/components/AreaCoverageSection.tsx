@@ -36,9 +36,9 @@ const AreaCoverageSection = () => (
           Area Coverage
         </h2>
         <p className="mx-auto mb-16 max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl">
-          We deliver fresh, delicious meals across Nawalapitiya and surrounding
-          areas. Check your location to see delivery times and available
-          restaurants.
+          We deliver essential goods and services across Nawalapitiya and
+          surrounding areas. From restaurants and bakeries to pharmacies and pet
+          supplies, we bring everything you need right to your doorstep.
         </p>
       </motion.div>
 
@@ -53,7 +53,7 @@ const AreaCoverageSection = () => (
         {coverageAreas.map((area, index) => (
           <div
             key={index}
-            className="rounded-2xl border border-[#00D707] bg-[#18191B] p-8 text-center transition-all duration-300 hover:border-[#00D707]/30"
+            className="rounded-2xl border border-[#648402] bg-[#18191B] p-8 text-center transition-all duration-300 hover:border-[#648402]/30"
           >
             <div className="mb-4 flex justify-center"></div>
             <h3 className="mb-2 text-xl font-bold text-white">{area.area}</h3>
@@ -79,14 +79,15 @@ const AreaCoverageSection = () => (
         transition={{ duration: 0.7, delay: 0.4 }}
         className="text-center"
       >
-        <div className="mx-auto max-w-4xl rounded-3xl border border-[#00D707] bg-gradient-to-r from-[#18191B] to-[#0a0a0a] p-12">
+        <div className="mx-auto max-w-4xl rounded-3xl border border-[#648402] bg-gradient-to-r from-[#18191B] to-[#0a0a0a] p-12">
           <h3 className="mb-6 text-2xl font-bold md:text-3xl">
             Delivery Coverage
           </h3>
           <p className="mb-6 text-lg leading-relaxed text-gray-300 md:text-xl">
             Oyo Eats currently delivers within a 20-kilometer radius of
             Nawalapitiya, Sri Lanka. We're constantly expanding our coverage
-            area to serve more communities with fresh, local food.
+            area to serve more communities with essential goods and services
+            from local businesses.
           </p>
         </div>
       </motion.div>

@@ -103,7 +103,7 @@ const FAQSection = () => {
             placeholder="Search FAQs..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full rounded-lg border border-gray-700 bg-[#1E1E1E] py-3 pr-4 pl-12 text-white placeholder-gray-400 transition-colors focus:border-[#00D707] focus:outline-none"
+            className="w-full rounded-lg border border-gray-700 bg-[#1E1E1E] py-3 pr-4 pl-12 text-white placeholder-gray-400 transition-colors focus:border-[#648402] focus:outline-none"
           />
         </motion.div>
 
@@ -116,7 +116,7 @@ const FAQSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="overflow-hidden rounded-lg border border-gray-700 bg-[#1E1E1E] transition-colors hover:border-[#00D707]"
+              className="overflow-hidden rounded-lg border border-gray-700 bg-[#1E1E1E] transition-colors hover:border-[#648402]"
             >
               <button
                 className="flex w-full cursor-pointer items-center justify-between px-6 py-4 text-left font-medium transition-colors hover:bg-[#2A2A2A] focus:outline-none"
@@ -125,7 +125,7 @@ const FAQSection = () => {
                 <span className="pr-4 text-base font-medium text-white">
                   {faq.question}
                 </span>
-                <span className="flex h-6 w-6 items-center justify-center text-[#00D707]">
+                <span className="flex h-6 w-6 items-center justify-center text-[#648402]">
                   {openIndex === index ? (
                     <ChevronUp className="h-5 w-5" />
                   ) : (
@@ -159,9 +159,9 @@ const FAQSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.6 }}
-          className="mt-12 rounded-xl border border-[#00D707]/20 bg-gradient-to-r from-[#00D707]/10 to-[#00D707]/5 p-6 text-center"
+          className="mt-12 rounded-xl border border-[#648402]/20 bg-gradient-to-r from-[#648402]/10 to-[#648402]/5 p-6 text-center"
         >
-          <h3 className="mb-2 text-xl font-semibold text-[#00D707]">
+          <h3 className="mb-2 text-xl font-semibold text-[#648402]">
             Still have questions?
           </h3>
           <p className="mb-4 text-gray-300">
@@ -170,7 +170,7 @@ const FAQSection = () => {
           </p>
           <a
             href="mailto:support@oyoeats.lk"
-            className="inline-flex items-center gap-2 rounded-lg bg-[#00D707] px-6 py-3 font-semibold text-black transition-colors hover:bg-[#00B300]"
+            className="inline-flex items-center gap-2 rounded-lg bg-[#648402] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#4A6202]"
           >
             Contact Support
           </a>

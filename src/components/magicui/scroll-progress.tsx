@@ -22,8 +22,8 @@ export const ScrollProgress = React.forwardRef<
       ref={ref}
       className={cn(
         "fixed inset-x-0 top-0 z-50 origin-left",
-        !color && "bg-gradient-to-r from-[#00D707] via-[#00B300] to-[#008F00]",
-        className
+        !color && "bg-gradient-to-r from-[#648402] via-[#4A6202] to-[#3A4A01]",
+        className,
       )}
       style={{
         scaleX: scrollYProgress,

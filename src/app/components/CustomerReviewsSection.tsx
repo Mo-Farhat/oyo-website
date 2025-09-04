@@ -99,7 +99,7 @@ const CustomerReviewsSection = () => {
         >
           <div className="inline-flex items-center gap-4 rounded-xl border border-gray-700 bg-[#1E1E1E] px-8 py-6">
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#00D707]">4.8</div>
+              <div className="text-4xl font-bold text-[#648402]">4.8</div>
               <div className="text-sm text-gray-400">Average Rating</div>
             </div>
             <div className="h-16 border-l border-gray-600"></div>
@@ -111,7 +111,7 @@ const CustomerReviewsSection = () => {
             </div>
             <div className="h-16 border-l border-gray-600"></div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-[#00D707]">98%</div>
+              <div className="text-4xl font-bold text-[#648402]">98%</div>
               <div className="text-sm text-gray-400">Satisfaction Rate</div>
             </div>
           </div>
@@ -127,7 +127,7 @@ const CustomerReviewsSection = () => {
         >
           <div className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-8">
             <div className="mb-6 text-center">
-              <Quote className="mx-auto mb-4 h-12 w-12 text-[#00D707]" />
+              <Quote className="mx-auto mb-4 h-12 w-12 text-[#648402]" />
               <p className="text-lg leading-relaxed text-gray-300 italic">
                 "{reviews[currentReview]?.comment}"
               </p>
@@ -155,7 +155,7 @@ const CustomerReviewsSection = () => {
           <div className="mt-6 flex cursor-pointer justify-center gap-4">
             <button
               onClick={prevReview}
-              className="group cursor-pointer rounded-full border border-gray-700 bg-[#1E1E1E] p-3 transition-colors hover:border-[#00D707]"
+              className="group cursor-pointer rounded-full border border-gray-700 bg-[#1E1E1E] p-3 transition-colors hover:border-[#648402]"
             >
               <ChevronLeft className="h-5 w-5 cursor-pointer text-white" />
             </button>
@@ -166,7 +166,7 @@ const CustomerReviewsSection = () => {
                   onClick={() => setCurrentReview(index)}
                   className={`h-3 w-3 rounded-full transition-colors ${
                     index === currentReview
-                      ? "bg-[#00D707]"
+                      ? "bg-[#648402]"
                       : "bg-gray-600 hover:bg-gray-500"
                   }`}
                 />
@@ -174,7 +174,7 @@ const CustomerReviewsSection = () => {
             </div>
             <button
               onClick={nextReview}
-              className="group cursor-pointer rounded-full border border-gray-700 bg-[#1E1E1E] p-3 transition-colors hover:border-[#00D707]"
+              className="group cursor-pointer rounded-full border border-gray-700 bg-[#1E1E1E] p-3 transition-colors hover:border-[#648402]"
             >
               <ChevronRight className="h-5 w-5 cursor-pointer text-white" />
             </button>
@@ -194,7 +194,7 @@ const CustomerReviewsSection = () => {
             <div className="text-gray-300">Happy Customers</div>
           </div>
           <div className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-6 text-center">
-            <div className="mb-2 text-3xl font-bold text-[white]">1000+</div>
+            <div className="mb-2 text-3xl font-bold text-[white]">10000+</div>
             <div className="text-gray-300">Orders Delivered</div>
           </div>
           <div className="rounded-xl border border-gray-700 bg-[#1E1E1E] p-6 text-center">
@@ -209,9 +209,9 @@ const CustomerReviewsSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="mt-12 rounded-xl border border-[#00D707]/20 bg-gradient-to-r from-[#00D707]/10 to-[#00D707]/5 p-8 text-center"
+          className="mt-12 rounded-xl border border-[#648402]/20 bg-gradient-to-r from-[#648402]/10 to-[#648402]/5 p-8 text-center"
         >
-          <h3 className="mb-2 text-xl font-semibold text-[#00D707]">
+          <h3 className="mb-2 text-xl font-semibold text-[#648402]">
             Join Our Happy Customers!
           </h3>
           <p className="mb-4 text-gray-300">
@@ -221,7 +221,7 @@ const CustomerReviewsSection = () => {
           <div className="flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="#"
-              className="inline-flex items-center gap-2 rounded-lg bg-[#00D707] px-6 py-3 font-semibold text-black transition-colors hover:bg-[#00B300]"
+              className="inline-flex items-center gap-2 rounded-lg bg-[#648402] px-6 py-3 font-semibold text-white transition-colors hover:bg-[#4A6202]"
             >
               Download for Android
             </a>
