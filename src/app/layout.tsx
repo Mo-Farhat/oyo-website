@@ -18,7 +18,12 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${poppins.variable} ${openSans.variable}`}>
+    <html lang="en-LK" className={`${poppins.variable} ${openSans.variable}`}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#648402" />
+        <link rel="canonical" href="https://oyoeats.lk" />
+      </head>
       <body>{children}</body>
     </html>
   );

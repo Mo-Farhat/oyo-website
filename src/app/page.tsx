@@ -12,10 +12,15 @@ import Footer from "./components/Footer";
 import { ScrollProgress } from "~/components/magicui/scroll-progress";
 import AnimatedPartners from "./components/AnimatedPartners";
 import CustomerReviewsSection from "./components/CustomerReviewsSection";
+import StructuredData from "./components/StructuredData";
+import { metadata } from "./metadata";
+
+export { metadata };
 
 export default function Home() {
   return (
     <>
+      <StructuredData />
       <ScrollProgress />
 
       <Header />

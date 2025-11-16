@@ -7,17 +7,17 @@ import { MapPin, Clock, Navigation } from "lucide-react";
 const coverageAreas = [
   {
     area: "Nawalapitiya Town",
-    distance: "0-5 km",
+    distance: "0-10 km",
     deliveryTime: "15-20 mins",
   },
   {
     area: "Surrounding Villages",
-    distance: "5-15 km",
+    distance: "10-20 km",
     deliveryTime: "20-30 mins",
   },
   {
     area: "Extended Coverage",
-    distance: "15-20 km",
+    distance: "20-30 km",
     deliveryTime: "30-45 mins",
   },
 ];
@@ -37,8 +37,8 @@ const AreaCoverageSection = () => (
         </h2>
         <p className="mx-auto mb-16 max-w-3xl text-lg leading-relaxed text-gray-300 md:text-xl">
           We deliver essential goods and services across Nawalapitiya and
-          surrounding areas. From restaurants and bakeries to pharmacies and pet
-          supplies, we bring everything you need right to your doorstep.
+          surrounding areas within a 30km radius. From restaurants and bakeries to pharmacies and pet
+          supplies, we bring everything you need right to your doorstep in 20-30 minutes.
         </p>
       </motion.div>
 
@@ -84,10 +84,10 @@ const AreaCoverageSection = () => (
             Delivery Coverage
           </h3>
           <p className="mb-6 text-lg leading-relaxed text-gray-300 md:text-xl">
-            Oyo Eats currently delivers within a 20-kilometer radius of
+            Oyo Eats currently delivers within a 30-kilometer radius of
             Nawalapitiya, Sri Lanka. We're constantly expanding our coverage
             area to serve more communities with essential goods and services
-            from local businesses.
+            from local businesses. Operating hours: 10AM to 11PM daily.
           </p>
         </div>
       </motion.div>

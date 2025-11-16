@@ -170,17 +170,17 @@ const HeroSection = () => {
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="order-2 justify-center lg:order-2 lg:justify-end"
+            className="order-2 flex justify-center lg:order-2 lg:justify-end"
             style={{
               transform: getParallaxTransform(0.8),
               willChange: isInView ? "transform" : "auto",
             }}
           >
-            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl">
+            <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center items-center">
               <img
                 src="/landing-app.png"
                 alt="Oyo App Interface"
-                className="h-full w-full object-cover object-center"
+                className="h-full w-full object-contain object-center"
               />
             </div>
           </motion.div>
