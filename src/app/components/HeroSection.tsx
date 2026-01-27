@@ -179,8 +179,10 @@ const HeroSection = () => {
             <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-lg xl:max-w-xl flex justify-center items-center">
               <img
                 src="/landing-app.png"
-                alt="Oyo App Interface"
+                alt="Oyo Eats mobile app interface showing food delivery options in Nawalapitiya Sri Lanka"
                 className="h-full w-full object-contain object-center"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
           </motion.div>
